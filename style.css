@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ec9292;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    border: 8px solid black;
+    background-color: rgb(188, 172, 172);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px; /* Adjusted max-width for better layout */
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px; /* Added gap for better spacing */
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+form input, form select, form button {
+    flex: 1 1 calc(33.333% - 20px); /* Ensures three items per row with margin adjustment */
+    padding: 10px;
+    margin: 0;
+}
+
+form input[type="date"] {
+    flex: 1 1 calc(50% - 20px); /* Ensures date picker spans half of the row */
+}
+
+form button {
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    flex: 1 1 100%; /* Ensures button spans full row */
+}
+
+form button:hover {
+    background-color: darkgreen;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+td button {
+    margin-right: 5px;
+}
+
+p {
+    text-align: right;
+    font-weight: bold;
+}
